@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+#nav_container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 300;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);   
+    padding: 10px 0; 
+    background-color: #000;
+}
+    
+
+
+#nav{
+    width: 80%;
+    margin-left: 10%;   
+    display: flex;
+    justify-content: space-between;
+   
+}   
+
+
+
+#logo div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+#logo h2{
+    color: #fff;
+}
+
+
+#link_container{
+    display: none;
+}
+
+
+#toggle h2{
+    line-height: 50px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+/* for side bar :::::::::::: */
+
+#sidebar{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    
+}
+
+#sidebar_container{
+
+    padding: 10px 40px;
+    background-color: #000;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+
+}
+
+#sidebar div ul li{
+    margin-bottom: 20px;
+}
+
+#sidebar div ul li .side_link{
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#sidebar div ul li button{
+    color: #fff;
+    background-color: #000;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#sidebar div ul li button:hover, #sidebar div ul li .side_link:hover{
+    opacity: 0.6;
+}
+
+
+/* toggle heigt with react */
+
+.show_hight{
+    height: 0;
+    
+}
+
+
+/*  setting media query  */
+
+@media only screen and (min-width: 750px) {
+    #toggle{
+        display: none;
+    }
+
+    #link_container{
+        display: flex;
+    }
+
+    #link_container ul {
+        display: flex;
+    }
+
+    #link_container ul li{
+        line-height: 50px;
+        margin-left: 10px;
+    }
+
+    #link_container ul li .link{
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #link_container ul li .link:hover{
+        opacity: 0.6;
+    }
+
+    #link_container ul li button{
+        background-color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #fff;
+        border: 2px solid rgba(255, 255, 255, 0.9);
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+
+    #link_container ul li button:hover{
+        opacity: 0.7;
+    }
+
+
+    #sidebar{
+        display: none;
+    }
+    
+}

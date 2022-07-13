@@ -1,0 +1,80 @@
+#mint{
+    margin-top: 80px;
+    display: flex;
+    height: calc(100vh - 100px);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mint_header{
+    text-align: center;
+}
+
+.mint_header h2{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.input{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input .name{
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.input .name:focus{
+    outline: none;
+    opacity: 0.7;
+}
+
+.input_file{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input_file .file{
+    
+    color: #fff;
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    cursor: pointer;
+   
+}
+
+.input_file button{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 5px 7px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.mint_btn{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.mint_btn button{
+    padding: 5px 10px;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}

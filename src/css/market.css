@@ -1,0 +1,146 @@
+#market{
+    margin-top: 80px;
+    width: 80%;
+    margin-left: 10%;
+   
+}
+
+#market #container{
+    padding: 40px 0;
+    width: 100%;
+}
+
+#nft_container{
+    padding: 20px;
+    background-color: #000;
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+
+#market_image_container{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+
+#market_image_container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.name h3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.name p{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#market_form_container{
+    margin-top: 20px;
+}
+
+
+#price_container{
+    display: flex;
+    flex-direction: column;
+}
+
+#price_container label{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#price_container input{
+    width: 50%;
+    padding: 5px;
+    border: none;
+    border-radius: 6px;
+}
+
+input:focus{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#time_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#time_container .time{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.time label{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.time input{
+    width: 100%;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+}
+
+#market_btn{
+    margin-top: 20px;
+
+}
+
+#market_btn button{
+    padding: 7px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#market_btn button:hover{
+    opacity: 0.6;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    #market #container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #nft_container{
+        width: 50%;
+    }
+
+    #market_form_container{
+        width: 45%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    #nft_container{
+        width: 30%;
+    }
+
+    #market_form_container{
+        width: 60%;
+    }
+}
